@@ -1,3 +1,7 @@
+package com.makeup.test;
+
+import com.makeup.FentyBeauty;
+
 public class FentyBeautyValidationTest {
     public static void main(String[] args) {
         FentyBeauty fenty = new FentyBeauty();
@@ -21,7 +25,7 @@ public class FentyBeautyValidationTest {
         System.out.println(fenty);
         System.out.println();
 
-        fenty.setFoundationNumber(1); // Should pass validation
+        fenty.setFoundationNumber(1); // Should pass validation.
         System.out.println(fenty);
         System.out.println();
 
@@ -30,6 +34,10 @@ public class FentyBeautyValidationTest {
         System.out.println();
 
         fenty.setFoundationNumber(26); // Should not pass validation
+        System.out.println(fenty);
+        System.out.println();
+
+        fenty.setFoundationNumber(29); // Should not pass validation
         System.out.println(fenty);
         System.out.println();
     }

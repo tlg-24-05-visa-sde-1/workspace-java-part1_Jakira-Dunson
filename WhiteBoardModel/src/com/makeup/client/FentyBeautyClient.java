@@ -1,3 +1,9 @@
+package com.makeup.client;
+
+import com.makeup.ConcealerType;
+import com.makeup.FentyBeauty;
+import com.makeup.FoundationType;
+
 public class FentyBeautyClient {
     public static void main(String[] args) {
         FentyBeauty fb = new FentyBeauty();

@@ -1,3 +1,5 @@
+package com.makeup;
+
 public class FentyBeauty {
 
     // instance variables

@@ -1,3 +1,9 @@
+package com.makeup.client;
+
+import com.makeup.ConcealerType;
+import com.makeup.FentyBeauty;
+import com.makeup.FoundationType;
+
 import java.util.Arrays;
 
 public class FentyBeautyClientArgs {
@@ -10,8 +16,8 @@ public class FentyBeautyClientArgs {
                             "Notes:\n" +
                             " 1. Available foundations are %s\n" +
                             " 2. Available concealers are %s\n",
-                    "FentyBeautyClientArgs:",
-                    "FentyBeautyClientArgs:",
+                    "com.makeup.client.FentyBeautyClientArgs:",
+                    "com.makeup.client.FentyBeautyClientArgs:",
                     Arrays.toString(FoundationType.values()),
                     Arrays.toString(ConcealerType.values())
             );
@@ -19,7 +25,7 @@ public class FentyBeautyClientArgs {
             System.out.println(display);
             return;
         }
-        //Process argument strings into proper types for FentyBeauty
+        //Process argument strings into proper types for com.makeup.FentyBeauty
         String primer = args[0];
         FoundationType foundation = FoundationType.valueOf(args[1]);
         int foundationNumber = Integer.parseInt(args[2]);
@@ -28,7 +34,7 @@ public class FentyBeautyClientArgs {
         String mascara = args[5];
         String blush = args[6];
 
-        //Create FentyBeauty object
+        //Create com.makeup.FentyBeauty object
         FentyBeauty fb = new FentyBeauty(primer, foundation,foundationNumber, concealer, concealerNumber, mascara, blush);
 
         //Print
